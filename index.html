@@ -78,7 +78,19 @@ hi {
 
       function iniciarjogo() {
         pontos = 0;
-        placar.textContent = "block";
+        placar.textContent = "Pontuação";
+        moverQuadrado();
+        quadrado.style.display = "block";
+
+        intervalo = setIntervalo(moverQuadrado, 1000); // muda de posição a cada 1s
+      }
+
+      function moverQuadrado (); 
+      let largura = jogo.clientwidth
+      let altura = jogo.clientwidth - 50;
+      
+      
+        
         
         
     </script>
