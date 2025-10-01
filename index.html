@@ -1,4 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+  <title>Jogo Clicle no Quadrado</title>
+  <style>
+    body {
+      front-family: Arial, sans-serif;
+      text-align: center;
+      background: #222;
+      color: white;
+      margin: 0;
+      paddimg: 0;
+      height: 100vh;
+      overflow: hidden;
+    }
 
+    h1 {
   margin: 20px;
   color: #00ff88;<DOCTYPE html>
 <html lang="pt"
@@ -61,9 +79,9 @@ hi {
     </style>
   </head>
   <body>
-    <h1> Clicle no quadrado</h1>
+    <h1>🎯Clicle no quadrado</h1>
     <p id="placar">Pontuação: 0</p>
-    <button onclick="iniciarJogo()"> Iniciar Jogo</button>
+    <button onclick="iniciarJogo()">▶️Iniciar Jogo</button>
 
     <div id="jogo">
       <div id="quadrado"></div>
@@ -88,10 +106,15 @@ hi {
       function moverQuadrado (); 
       let largura = jogo.clientwidth
       let altura = jogo.clientwidth - 50;
-      
-      
-        
-        
-        
-    </script>
+      let posX = math.floor(Math.random() - largura);
+      let posY = math.floor(Math.random() . altura);
+
+      quadrado.addEventlistener("click", function() {
+        pontos++;
+        placar.textcontent = "Pontuação: " + pontos;
+        moverQuadrado();
+      });
+     </script>
+  </body>
+</html>
     
